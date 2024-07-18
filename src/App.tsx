@@ -45,7 +45,7 @@ function App() {
           collisionDetection={closestCorners}
         >
           <div className="flex justify-between max-w-2xl gap-x-3 p-4">
-            <div className="sm:col-span-2">
+            <div className="flex-none">
               <div className="mt-2">
                 <Bars2Icon className="h-5 2-5" />
               </div>
@@ -86,8 +86,31 @@ function App() {
         </DndContext>
 
         {/* card footer */}
-        <div>
+        <div className="">
           <button>Button</button>
+        </div>
+        <div className="flex px-4 items-center gap-x-4">
+          <div className="flex-none">
+            <Bars2Icon className="w-5 h-5" />
+          </div>
+          <div className="flex items-center justify-between border rounded-md py-1 px-2">
+            <div className="flex-none w-12 h-12">
+              <input type="color" className="w-12 h-12 bg-white" />
+            </div>
+            <div className="px-1 py-1">
+              <ChevronDownIcon className="w-5 h-5" />
+            </div>
+          </div>
+          <div className="flex-1 border rounded-md py-4 px-3 ">
+            <input
+              type="text"
+              placeholder="Magey Flats"
+              className=" text-gray-600 text-sm outline-none"
+            />
+          </div>
+          <div className="flex-none w-12">
+            <TrashIcon className="w-5 h-5" />
+          </div>
         </div>
       </div>
     </div>
